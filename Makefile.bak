@@ -1,0 +1,16 @@
+all: pdf html
+
+run: html
+	firefox resume-ch.html 
+
+html:
+	rst2html resume.rst > resume.html
+	rst2html resume-ch.rst > resume-ch.html
+
+pdf: 
+	rst2pdf resume.rst --output=resume.pdf
+	rst2pdf resume-ch.rst --output=resume-ch.pdf
+
+clean:
+	rm -vf resume.pdf resume.html 
+
