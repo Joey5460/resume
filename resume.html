@@ -4,23 +4,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Docutils 0.13.1: http://docutils.sourceforge.net/" />
-<script type="text/javascript"> 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19343401-2']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script> 
-<title>周宇 程序员</title>
+<title>Zhou Yu, Software Developer</title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 5196 2007-06-03 20:25:28Z wiemann $
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -48,6 +37,14 @@ table.borderless td, table.borderless th {
 .hidden {
   display: none }
 
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
 a.toc-backref {
   text-decoration: none ;
   color: black }
@@ -57,6 +54,10 @@ blockquote.epigraph {
 
 dl.docutils dd {
   margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
 
 /* Uncomment (and remove this text!) to get bold-faced definition list terms
 dl.docutils dt {
@@ -84,7 +85,7 @@ div.tip p.admonition-title {
 
 div.attention p.admonition-title, div.caution p.admonition-title,
 div.danger p.admonition-title, div.error p.admonition-title,
-div.warning p.admonition-title {
+div.warning p.admonition-title, .code .error {
   color: red ;
   font-weight: bold ;
   font-family: sans-serif }
@@ -168,11 +169,52 @@ h2.subtitle {
 hr.docutils {
   width: 75% }
 
-img.align-left {
-  clear: left }
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
 
-img.align-right {
-  clear: right }
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
 
 ol.simple, ul.simple {
   margin-bottom: 1em }
@@ -227,12 +269,20 @@ p.topic-title {
 pre.address {
   margin-bottom: 0 ;
   margin-top: 0 ;
-  font-family: serif ;
-  font-size: 100% }
+  font: inherit }
 
-pre.literal-block, pre.doctest-block {
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
   margin-left: 2em ;
   margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
 
 span.classifier {
   font-family: sans-serif ;
@@ -285,170 +335,95 @@ table.docutils th.field-name, table.docinfo th.docinfo-name {
   white-space: nowrap ;
   padding-left: 0 }
 
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
 h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
 h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
   font-size: 100% }
 
 ul.auto-toc {
   list-style-type: none }
-/*
-:Author: Fred L. Drake, Jr.
-:date: $Date: 2004/03/31 22:31:05 $
-:version: $Revision: 1.7 $
-
-This stylesheet combines some ideas from the two stylesheets
-distributed with docutils and enhances them for Zope 3 documentation.
-*/
-
-body {
-  margin: 0px 1em 1em 4em;
-  padding: 0px; }
-
-h1.title {
-  font-size: 150%;
-  min-height: 42px; }
-
-div.section {
-  margin: 0px 0px 1.5em 0px; }
-
-div.section h1 {
-  background-color: rgb(230,230,230);
-  margin-left: -2em;
-  padding: 0.2em;
-  padding-left: 0.35em;
-  padding-top: 0.35em;
-  /* This grey underline make this more visually distinctive on LCD
-     monitors, which often don't have enough contrast. */
-  border-right: thin solid rgb(180,180,180);
-  border-bottom: thin solid rgb(180,180,180); }
-
-div.section div.section div.section h3 {
-  margin-left: -1.9em;
-  margin-bottom: -0.5em; }
-
-h1 {
-  font-family: sans-serif;
-  font-size: 135%; }
-
-h2 {
-  font-family: sans-serif;
-  font-size: 120%; }
-
-h3 {
-  font-family: sans-serif;
-  font-size: 105%; }
-
-h4 {
-  font-family: sans-serif;
-  font-size: 100%; }
-
-h5 {
-  font-family: sans-serif;
-  font-size: 100%; }
-
-h6 {
-  font-family: sans-serif;
-  font-style: italic;
-  font-size: 100%; }
-
-hr {
-  width: 75%; }
-
-.literal .pre {
-  background-color: white;
-  font-family: lucidatypewriter, "lucida typewriter", sans-serif; }
-
-.literal-block {
-  border: thin solid rgb(180,180,180);
-  font-family: lucidatypewriter, "lucida typewriter", monospace;
-  font-size: 80%;
-  padding: 0.5em; }
-
-table.table {
-  margin-left: 2em;
-  margin-right: 2em; }
-
-table.table thead {
-  background-color: rgb(230,230,230); }
-
-dt {
-  font-weight: bold; }
-
-/* docutils uses the "option" class with both "col" and "span"
-   elements, so we have to be explicit here */
-.option-list span.option {
-  font-weight: bold; }
-
-.option-list kbd {
-  font-family: inherit; }
 
 </style>
 </head>
 <body>
-<div class="document" id="id1">
-<h1 class="title">周宇 程序员</h1>
+<div class="document" id="zhou-yu-software-developer">
+<h1 class="title">Zhou Yu, Software Developer</h1>
 
-<p><a class="reference external" href="mailto:zhouyu5460&#64;hotmail.com">zhouyu5460&#64;hotmail.com</a> | 电话: 18611778084 | <a class="reference external" href="https://joey5460.github.io">https://joey5460.github.io</a> | <a class="reference external" href="https://github.com/joey5460">GitHub</a>: &#64;joey5460</p>
+<p><a class="reference external" href="mailto:zhouyu5460&#64;hotmail.com">zhouyu5460&#64;hotmail.com</a> | Phone: 18611778084 | <a class="reference external" href="https://joey5460.github.io">https://joey5460.github.io</a> | <a class="reference external" href="https://github.com/joey5460">GitHub</a>: &#64;joey5460</p>
 <ul class="simple">
-<li>具备丰富的计算机知识的程序员,擅长嵌入式，应用程序和算法研究</li>
-<li>7年开发经验，从业于大型集团和创业公司</li>
-<li>即可独立开发也可带领团队</li>
-<li>极强的职业道德和自我激励的员工</li>
-<li>乐于学习新技术，并且与他人分享</li>
+<li>Talented software developer with Master degree, strong educational background in computer science.</li>
+<li>Self-motivated professional with a strong work ethic and the ability to get the job done, happy to share knowledge and good teamwork.</li>
+<li>Flexible quick learner who enjoys taking on new challenges and learning new technologies.</li>
+<li>7+ years experience in startups and large organizations.</li>
+<li>Comfortable as an individual contributor or a team leader.</li>
 </ul>
-<div class="section" id="id2">
-<h1>工作经历</h1>
-<p><strong>首席软件工程师</strong>, <em>2015至今</em> <a class="reference external" href="http://english.naton.cn">北京纳通集团医疗科技有限公司</a></p>
-<p>研发膝关节康复设备</p>
+<div class="section" id="corporate-experience">
+<h1>Corporate Experience</h1>
+<p><strong>Principal Software Engineer</strong>, <em>Since 2015</em> <a class="reference external" href="http://english.naton.cn">Naton, Co</a> (Beijing)</p>
+<p>Developing sensor tag</p>
 <blockquote>
 <ul class="simple">
-<li>带领五人团队，负责指导新人和控制项目进度</li>
-<li>使用C，Python，Javascript 和nRF53832开发低功耗膝关节康复设备</li>
-<li>开发设备测试工具</li>
-<li>研究运动跟踪算法</li>
-<li>代码评审</li>
-</ul>
-</blockquote>
-<p><strong>嵌入式软件程序员</strong> <em>5/2012-5/2015(3 年)</em> 北京瑞新康达医疗科技有限公司</p>
-<p>研发自动体外除颤仪</p>
-<blockquote>
-<ul class="simple">
-<li>使用C语言，Python，DSP在Linux平台下开发自动体外除颤仪</li>
-<li>负责室颤，室速识别算法研究</li>
-<li>开发AED固件</li>
-<li>开发测试工具</li>
-<li>编写需求规格说明书和单元测试文档</li>
+<li>Managed a team of 5 engineers, with responsibility for mentoring, roadmap</li>
+<li>Developed a low power rehabilitation equipment for the postoperative patient with C, Python, Javascript, Cordova, and BLE4.0 based on TI CC2541, nRF52832 on Linux.</li>
+<li>Developed debuging tools for the device.</li>
+<li>Resposible for algorithm of motion tracking.</li>
+<li>Code review.</li>
 </ul>
 </blockquote>
-<p><strong>程序员</strong> <em>3/2011-3/2012 (1 年)</em> <a class="reference external" href="http://www.aeonmed.com">北京谊安医疗科技有限公司</a></p>
-<p>研发呼吸机</p>
+<p><strong>Embedded Programmer</strong> <em>5/2012-5/2015(3 years)</em> Rescond, Co (Beijing)</p>
+<p>Developing AED</p>
 <blockquote>
 <ul class="simple">
-<li>使用C#和C语言在Windows CE平台和ARM CortexM3开发代号为NVP的呼吸机</li>
-<li>负责GUI和电源管理单元开发</li>
-<li>单元测试</li>
-<li>收集NVP临床使用反馈信息</li>
+<li>Worked with a small team of developers to develop AED (Automatic External Defibrillator) with C and Python on ADI DSP and Linux.</li>
+<li>Responsible for the algorithm of detecting VT, VF.</li>
+<li>Developing AED firmware.</li>
+<li>Developing test tools.</li>
+<li>Writing functional specification and unit test documents.</li>
+</ul>
+</blockquote>
+<p><strong>Programmer</strong> <em>3/2011-3/2012 (1 year)</em> <a class="reference external" href="http://www.aeonmed.com">Aeonmed, Co</a> (Beijing)</p>
+<p>Developing Ventilator</p>
+<blockquote>
+<ul class="simple">
+<li>Worked with a small team of developers to develop NVP Ventilator with C# and C on Windows CE and ARM CortexM3.</li>
+<li>Responsible for developing GUI and power management unit.</li>
+<li>Unit Test.</li>
+<li>Collecting feedback about NVP Ventilator from hopitals.</li>
 </ul>
 </blockquote>
 </div>
-<div class="section" id="id3">
-<h1>技能</h1>
-<p><strong>软件开发</strong></p>
+<div class="section" id="skills">
+<h1>Skills</h1>
+<p><strong>Software Development</strong></p>
 <ul class="simple">
-<li>开发语言: Python, C, C++, JavaScript, and Bash.</li>
-<li>擅长使用Python进行算法研究，GUI编程和开发测试程序.</li>
-<li>精于使用C语言嵌入式开发和C++/Qt面向对象编程</li>
-<li>工具:git/github, clearcase，bugseverywhere, gcc, jlink, nrf52, postgresql.</li>
-<li>第三方库: freertos, matplot, wxPython.</li>
+<li>Codes in: Python, C, C++, JavaScript, and Bash.</li>
+<li>Expert-level development in Python with emphasis on algorithm, wxPython and test tools.</li>
+<li>Excel in C with embedded software development and C++/Qt for infrastructure library development.</li>
+<li>Tools:git/github, clearcase, eugseverywhere, gcc, jlink, nrf52, postgresql.</li>
+<li>Libraries: freertos, matplot, wxPython.</li>
 <li>ARM/DSP: spi, i2c, uart, eppi, nand flash control.</li>
-<li>开发平台: Linux.</li>
+<li>Platforms: Linux.</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h1>教育背景</h1>
+<div class="section" id="education">
+<h1>Education</h1>
 <blockquote>
-<p>研究生 沈阳工业大学 <em>2009-2011</em></p>
-<p>本科   沈阳工业大学 <em>2003-2008</em></p>
+<p>Master in Computer Science at Shenyang University of Technology (Shenyang, China ). <em>2009-2011</em></p>
+<p>BS in Computer Science at Shenyang University of Technology (Shenyang, China). <em>2003-2008</em></p>
 </blockquote>
 </div>
 </div>
