@@ -1,7 +1,8 @@
 all: pdf html
 
 run: html
-	firefox resume-ch.html 
+	rst2html resume.rst > resume.html
+	firefox resume.html 
 
 html:
 	rst2html resume.rst > resume.html

@@ -1,7 +1,8 @@
 周宇 程序员
 ============================================
 
-zhouyu5460@hotmail.com | 电话: 18611778084 | https://joey5460.github.io | GitHub_: @joey5460  
+| zhouyu5460@hotmail.com | 电话: 18611778084 | https://joey5460.github.io 
+| GitHub_: @joey5460 | 年龄: 33 | 性别：男 
 
 - 具备丰富的计算机知识的程序员,擅长嵌入式，应用程序和算法研究 
 - 7年开发经验，从业于大型集团和创业公司  
@@ -11,17 +12,18 @@ zhouyu5460@hotmail.com | 电话: 18611778084 | https://joey5460.github.io | GitH
 
 工作经历
 --------------------
-**首席软件工程师**, *2015至今* `北京纳通集团医疗科技有限公司`_ 
+**首席软件工程师**, *5/2015至今* `北京纳通集团医疗科技有限公司`_ 
 
 研发膝关节康复设备
 
-    - 带领五人团队，负责指导新人和控制项目进度
     - 使用C，Python，Javascript 和nRF53832开发低功耗膝关节康复设备  
+    - 带领五人团队，负责指导新人和控制项目进度
     - 开发设备测试工具  
     - 研究运动跟踪算法  
     - 代码评审
+    - 辅助生产
 
-**嵌入式软件程序员** *5/2012-5/2015(3 年)* 北京瑞新康达医疗科技有限公司
+**嵌入式程序员** *5/2012-5/2015(3 年)* 北京瑞新康达医疗科技有限公司
 
 研发自动体外除颤仪
 
@@ -48,7 +50,7 @@ zhouyu5460@hotmail.com | 电话: 18611778084 | https://joey5460.github.io | GitH
 - 开发语言: Python, C, C++, JavaScript, and Bash.
 - 擅长使用Python进行算法研究，GUI编程和开发测试程序.
 - 精于使用C语言嵌入式开发和C++/Qt面向对象编程
-- 工具:git/github, clearcase，bugseverywhere, gcc, jlink, nrf52, postgresql.
+- 工具: git/github, clearcase，bugseverywhere, gcc, jlink, nrf52, postgresql.
 - 第三方库: freertos, matplot, wxPython.  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
 - 开发平台: Linux.
@@ -59,6 +61,12 @@ zhouyu5460@hotmail.com | 电话: 18611778084 | https://joey5460.github.io | GitH
 	研究生 沈阳工业大学 *2009-2011*
 
 	本科   沈阳工业大学 *2003-2008*
+
+英语水平
+--------
+    听说读写流利
+
+    大学英语6级: 480
 
 
 .. _GitHub: https://github.com/joey5460
