@@ -47,12 +47,13 @@
 ------
 **软件开发**
 
-- 开发语言: Python, C, C++, JavaScript, and Bash.
+- 开发语言: C, C++, Python, JavaScript, and Bash.
 - 擅长使用Python进行算法研究，GUI编程和开发测试程序.
 - 精于使用C语言嵌入式开发和C++/Qt面向对象编程
 - 工具: git/github, clearcase，bugseverywhere, gcc, jlink, nrf52, postgresql.
-- 第三方库: freertos, matplot, wxPython.  
+- 第三方库: freertos, matplot, wxPython, Qt  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
+- 芯片: Blackfin series, NRF52, Nor Flash(W25Q), MPU9250
 - 开发平台: Linux.
  
 教育背景

@@ -47,12 +47,13 @@ Skills
 ------
 **Software Development**
 
-- Codes in: Python, C, C++, JavaScript, and Bash.
+- Codes in: C, C++, Python, JavaScript, and Bash.
 - Expert-level development in Python with emphasis on algorithm, wxPython and test tools.
 - Excel in C with embedded software development and C++/Qt for infrastructure library development.
 - Tools:git/github, clearcase, bugseverywhere, gcc, jlink, nrf52, postgresql.
-- Libraries: freertos, matplot, wxPython.  
+- Libraries: freertos, matplot, wxPython, Qt.  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
+- Chips: Blackfin series, NRF52, Nor Flash(W25Q), MPU9250
 - Platforms: Linux.
  
 Education
