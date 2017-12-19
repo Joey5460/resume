@@ -30,6 +30,7 @@
     - 使用C语言，Python，DSP在Linux平台下开发自动体外除颤仪 
     - 负责室颤，室速识别算法研究
     - 开发AED固件
+    - 开发与固件设备交互的应用程序  
     - 开发测试工具
     - 编写需求规格说明书和单元测试文档
      
@@ -51,9 +52,9 @@
 - 擅长使用Python进行算法研究，GUI编程和开发测试程序.
 - 精于使用C语言嵌入式开发和C++/Qt面向对象编程
 - 工具: git/github, clearcase，bugseverywhere, gcc, jlink, nrf52, postgresql.
-- 第三方库: freertos, matplot, wxPython, Qt  
+- 第三方库: freertos, matplot, wxPython, Qt, yapsy, E-Kermit.  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
-- 芯片: Blackfin series, NRF52, Nor Flash(W25Q), MPU9250
+- 芯片: Blackfin 547, NRF52, Nor Flash(W25Q), MPU9250
 - 开发平台: Linux.
  
 教育背景

@@ -30,6 +30,7 @@ Developing AED
     - Worked with a small team of developers to develop AED (Automatic External Defibrillator) with C and Python on ADI DSP and Linux.
     - Responsible for the algorithm of detecting VT, VF.
     - Developing AED firmware.
+    - Developing application exchanging data with firmware.
     - Developing test tools.  
     - Writing functional specification and unit test documents.
      
@@ -51,9 +52,9 @@ Skills
 - Expert-level development in Python with emphasis on algorithm, wxPython and test tools.
 - Excel in C with embedded software development and C++/Qt for infrastructure library development.
 - Tools:git/github, clearcase, bugseverywhere, gcc, jlink, nrf52, postgresql.
-- Libraries: freertos, matplot, wxPython, Qt.  
+- Libraries: freertos, matplot, wxPython, Qt, yapsy, E-Kermit.  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
-- Chips: Blackfin series, NRF52, Nor Flash(W25Q), MPU9250
+- Chips: Blackfin 547, NRF52, Nor Flash(W25Q), MPU9250
 - Platforms: Linux.
  
 Education
