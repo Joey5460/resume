@@ -12,7 +12,14 @@ Zhou Yu, Software Developer
 
 Corporate Experience
 --------------------
-**Principal Software Engineer**, *Since 5/2015* `Naton, Co`_ (Beijing)
+**GUI Software Engineer**, *Since 5/2017* `Siriusmed, Co`_ (Beijing)
+
+Developing Anesthesia Machine
+    
+    - GUI of anesthesia machine development with Qt/C++
+    - Unit Test.  
+
+**Principal Software Engineer**, *5/2015-5/2017* `Naton, Co`_ (Beijing)
 
 Developing sensor tag
 
@@ -52,7 +59,7 @@ Skills
 - Expert-level development in Python with emphasis on algorithm, wxPython and test tools.
 - Excel in C with embedded software development and C++/Qt for infrastructure library development.
 - Tools:git/github, clearcase, bugseverywhere, gcc, jlink, nrf52, postgresql.
-- Libraries: freertos, matplot, wxPython, Qt, yapsy, E-Kermit.  
+- Libraries: Qt/C++, freertos, matplot, wxPython, yapsy, E-Kermit.  
 - ARM/DSP: spi, i2c, uart, eppi, nand flash control.  
 - Chips: Blackfin 547, NRF52, Nor Flash(W25Q), MPU9250
 - Platforms: Linux.
@@ -74,3 +81,4 @@ English Level
 .. _GitHub: https://github.com/joey5460
 .. _Naton, Co: http://english.naton.cn 
 .. _Aeonmed, Co: http://www.aeonmed.com 
+.. _Siriusmed, Co: http://www.siriusmedica.com 

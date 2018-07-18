@@ -5,8 +5,8 @@ run: html
 	firefox resume.html 
 
 html:
-	rst2html resume.rst > resume.html
-	rst2html resume-ch.rst > resume-ch.html
+	rst2html.py resume.rst > resume.html
+	rst2html.py resume-ch.rst > resume-ch.html
 
 pdf: 
 	pandoc -f rst -t odt resume-ch.rst -o resume-ch.odt
